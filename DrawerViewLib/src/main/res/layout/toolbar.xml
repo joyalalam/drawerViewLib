@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="?attr/actionBarSize">
+
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@+id/btn_back"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingExtra="-10dp"
+            android:maxLines="1"
+            android:paddingStart="0dp"
+            android:text="title"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="subtile"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/btn1"
+        android:layout_width="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@android:color/transparent"/>
+
+    <ImageButton
+        android:id="@+id/btn2"
+        android:layout_width="50dp"
+        android:layout_toStartOf="@+id/btn1"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@android:color/transparent"/>
+
+    <ImageButton
+        android:id="@+id/btn3"
+        android:layout_width="50dp"
+        android:layout_toStartOf="@+id/btn2"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@android:color/transparent"/>
+
+</RelativeLayout>
